@@ -32,10 +32,12 @@ public class Card {
 	 *                  containing the point value of the card
 	 */
 	public Card(String cardRank, String cardSuit, int cardPointValue) {
-		//initializes a new Card with the given rank, suit, and point value
-		rank = cardRank;
-		suit = cardSuit;
-		pointValue = cardPointValue;
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+
+	this.rank = cardRank;
+	this.suit = cardSuit;
+	this.pointValue = cardPointValue;
+		
 	}
 
 
@@ -44,7 +46,10 @@ public class Card {
 	 * @return this <code>Card's</code> suit.
 	 */
 	public String suit() {
-		return suit;
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+   return suit;
+   
+		
 	}
 
 	/**
@@ -52,7 +57,8 @@ public class Card {
 	 * @return this <code>Card's</code> rank.
 	 */
 	public String rank() {
-		return rank;
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	return rank;
 	}
 
    /**
@@ -60,7 +66,8 @@ public class Card {
 	 * @return this <code>Card's</code> point value.
 	 */
 	public int pointValue() {
-		return pointValue;
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+return pointValue;
 	}
 
 	/** Compare this card with the argument.
@@ -70,10 +77,29 @@ public class Card {
 	 *         false otherwise.
 	 */
 	public boolean matches(Card otherCard) {
-		return otherCard.suit().equals(this.suit())
-			&& otherCard.rank().equals(this.rank())
-			&& otherCard.pointValue() == this.pointValue();
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	if ( otherCard.rank.equals(rank) ) {
+		if ( otherCard.suit.equals(suit) ){
+			if (otherCard.pointValue == (pointValue) ) {
+				return true;
+			} else {
+				return false;
+			}
+		} else {
+			return false;
+		}
+	}else {
+		return false;
 	}
+/*	if ( otherCard.rank.equals(rank) && otherCard.suit.equals(suit) otherCard.pointValue == (pointValue)){
+		return true;
+	}
+		if (otherCard.pointValue == (pointValue) )
+		return true;
+ 	*/}
+	
+		
+
 
 	/**
 	 * Converts the rank, suit, and point value into a string in the format
@@ -87,6 +113,8 @@ public class Card {
 	 */
 	@Override
 	public String toString() {
-		return rank + " of " + suit + " (point value = " + pointValue + ")";
+		/* *** TO BE IMPLEMENTED IN ACTIVITY 1 *** */
+	
+		
 	}
 }
